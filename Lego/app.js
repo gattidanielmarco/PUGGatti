@@ -7,11 +7,11 @@ app.get('/', function (req, res) {
   //res.send('Hello World!');
    res.render('index', {
    title: 'Homepage',
-   l: l.lego 
+   lego: lego.lego 
  });
 });
 app.get('/l', (req, res) => {
-  const legos = l.lego.find((p) => p.id === req.query.id);
+  const legos = lego.lego.find((p) => p.Numero === req.query.Numero);
   res.render('l', {
     Nome: `About ${legos.Nome}`,
     legos,

@@ -6,10 +6,10 @@ html
  body
    header.header
    article.container
-     each person in people
+     each l in lego
        div.person
-         div.person-image(style=`background: url('/images/${person.imgSrc}') top center no-repeat; background-size: cover;`)
+         div.person-image(style=`background: url('/images/${l.imgSrc}') top center no-repeat; background-size: cover;`)
          h2.person-name
-           | #{person.firstname} #{person.lastname}
-         a(href=`/profile?id=${person.id}`)
+           | #{l.Nome}
+         a(href=`/l?Numero=${l.Numero}`)
            | View Profile
