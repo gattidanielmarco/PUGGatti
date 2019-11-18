@@ -5,11 +5,13 @@ html
    meta(name="viewport" content="width=device-width, initial-scale=1")
  body
    header.header
+    div 
+        h1.h1 Lego
    article.container
      each l in lego
        div.person
-         div.person-image(style=`background: url('/images/${l.imgSrc}') top center no-repeat; background-size: cover;`)
+         div.person-image(style=`background: url('/images/${l.ImgSrc}') top center no-repeat; background-size: cover;`)
          h2.person-name
            | #{l.Nome}
-         a(href=`/l?Numero=${l.Numero}`)
+         a(href=`/lego?id=${l.Numero}`)
            | View Profile

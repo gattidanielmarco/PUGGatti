@@ -10,12 +10,17 @@ app.get('/', function (req, res) {
    lego: lego.lego 
  });
 });
-app.get('/l', (req, res) => {
+/*app.get('/l', (req, res) => {
   const legos = lego.lego.find((p) => p.Numero === req.query.Numero);
   res.render('l', {
     Nome: `About ${legos.Nome}`,
     legos,
   });
+});*/
+app.get('/lego', (req, res) => {
+    const r = lego.lego.find(p => {p.Numero === req.query.id});
+    console.log(r);
+    res.render('l', {r}); // l è il nome del file
 });
 
 app.listen(3000, function () {
