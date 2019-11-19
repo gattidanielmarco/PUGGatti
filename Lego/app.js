@@ -7,7 +7,7 @@ app.get('/', function (req, res) {
   //res.send('Hello World!');
    res.render('index', {
    title: 'Homepage',
-   lego: lego.lego 
+   lego: lego.legos 
  });
 });
 /*app.get('/l', (req, res) => {
@@ -17,10 +17,10 @@ app.get('/', function (req, res) {
     legos,
   });
 });*/
-app.get('/lego', (req, res) => {
-    const r = lego.lego.find(p => {p.Numero === req.query.id});
+app.get('/l', (req, res) => {
+    const r = lego.legos.find(p => p.Numero === req.query.id);
     console.log(r);
-    res.render('l', {r}); // l è il nome del file
+    res.render('l', {title : `About ${r.Nome}` ,r}); // l è il nome del file
 });
 
 app.listen(3000, function () {

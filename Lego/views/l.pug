@@ -4,16 +4,20 @@ html
    link(rel='stylesheet', href='/css/style.css')
    meta(name="viewport" content="width=device-width, initial-scale=1")
  body
+   header.header
+         h1.h1 #{title}
    div.profile
-     div.profile-image(style=`background: url('/images/${result.ImgSrc}') top center no-repeat; background-size: cover;`)
+     div.profile-image(style=`background: url('/images/${r.ImgSrc}') top center no-repeat; background-size: cover;`)
      div.profile-details
        h1.profile-name
-         | #{result.Nome}
-       h2.profile-tagline
-         | #{result.Età}
-       p.profile-bio
-         | #{result.NPezzi}
-       p.profile-bio
-         | #{result.Numero}
-       p.profile-bio
-         | #{result.LinkIstruzioni}
+         | #{r.Nome}
+       h1.profile-tagline
+         | #{r.Età}
+       h1.profile-bio
+         | #{r.NPezzi}
+       h1.profile-bio
+         | #{r.Numero}
+       a.profile-bio(href = `${r.LinkIstruzioni}`)
+         | Istruzioni
+       a.profile-bio(href = "https://3000-df41e9bd-4ebd-4971-b27c-826d98ba66a6.ws-eu01.gitpod.io/")
+         | Torna alla Home

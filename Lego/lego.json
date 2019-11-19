@@ -1,18 +1,28 @@
 {
-    "lego": [
+    "legos": [
         {
             "Nome" : "Lego Harry Potter",
             "Età": "8+",
             "NPezzi": 265,
-            "Numero": 4767,
+            "Numero": "4767",
             "LinkIstruzioni": "https://letsbuilditagain.com/instructions/4767/",
-            "ImgSrc": "harry-potter.jpg"
+            "ImgSrc": "harry-potter.jpg",
+            "ImgSrcH1": "H1.JPG",
+            "ImgSrcH2": "H2.JPG",
+            "ImgSrcH3": "H3.JPG",
+            "ImgSrcH4": "H4.JPG",
+            "ImgSrcH5": "H5.JPG",
+            "ImgSrcH6": "H6.JPG",
+            "ImgSrcH7": "H7.JPG",
+            "ImgSrcH8": "H8.JPG",
+            "ImgSrcH9": "H9.JPG",
+            "ImgSrcH10": "H10.JPG"
         },
         {
             "Nome": "Morte Nera",
             "Età": "12+",
             "NPezzi": 10188,
-            "Numero": 10188,
+            "Numero": "10188",
             "LinkIstruzioni": "https://letsbuilditagain.com/instructions/10188/",
             "ImgSrc": "morte-nera.jpg"
         },
@@ -20,7 +30,7 @@
             "Nome": "Durmstrang",
             "Età": "8+",
             "NPezzi": 4768,
-            "Numero": 4768,
+            "Numero": "4768",
             "LinkIstruzioni": "https://letsbuilditagain.com/instructions/4768/",
             "ImgSrc": "Durmstrang.jpg"
         }
