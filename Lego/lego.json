@@ -7,16 +7,8 @@
             "Numero": "4767",
             "LinkIstruzioni": "https://letsbuilditagain.com/instructions/4767/",
             "ImgSrc": "harry-potter.jpg",
-            "ImgSrcH1": "H1.JPG",
-            "ImgSrcH2": "H2.JPG",
-            "ImgSrcH3": "H3.JPG",
-            "ImgSrcH4": "H4.JPG",
-            "ImgSrcH5": "H5.JPG",
-            "ImgSrcH6": "H6.JPG",
-            "ImgSrcH7": "H7.JPG",
-            "ImgSrcH8": "H8.JPG",
-            "ImgSrcH9": "H9.JPG",
-            "ImgSrcH10": "H10.JPG"
+            "ImgSrcH1": ["H1.JPG","H2.JPG","H3.JPG","H4.JPG","H5.JPG","H6.JPG","H7.JPG","H8.JPG","H9.JPG","H10.JPG"]
+         
         },
         {
             "Nome": "Morte Nera",
@@ -24,7 +16,8 @@
             "NPezzi": 10188,
             "Numero": "10188",
             "LinkIstruzioni": "https://letsbuilditagain.com/instructions/10188/",
-            "ImgSrc": "morte-nera.jpg"
+            "ImgSrc": "morte-nera.jpg",
+            "ImgSrcH1": ["S1.JPG","S2.JPG","S3.jpg","S4.jpg","S5.jpg","H6.JPG","H7.JPG","H8.JPG","H9.JPG","H10.JPG"]
         },
         {
             "Nome": "Durmstrang",
