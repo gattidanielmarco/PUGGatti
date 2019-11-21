@@ -25,7 +25,8 @@
             "NPezzi": 4768,
             "Numero": "4768",
             "LinkIstruzioni": "https://letsbuilditagain.com/instructions/4768/",
-            "ImgSrc": "Durmstrang.jpg"
+            "ImgSrc": "Durmstrang.jpg",
+            "ImgSrcH1": ["h1.jpg","h2.jpg","h3.jpg","h4.jpg","j5.jpg","h6.jpg","h7.jpg","h8.jpg","h9.jpg","h10.jpg"]
         }
     ]
 }
