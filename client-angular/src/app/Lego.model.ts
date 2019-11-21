@@ -3,6 +3,9 @@ export class Lego{
   eta: string;
   nPezzi: number;
   numero: string;
+  link:string;
+  ImgSrc:string;
+
 
 
 }
