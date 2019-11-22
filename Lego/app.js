@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var path = require('path');
 const lego = require('./lego.json');
 const http = require('http');
 var cors = require('cors');
@@ -21,9 +22,15 @@ app.get('/', function (req, res) {
   });
 });*/
 app.get('/l', (req, res) => {
-    const r = lego.legos.find(p => p.Numero === req.query.id);
-    console.log(r);
-    res.render('l', {title : `About ${r.Nome}` ,r}); // l è il nome del file
+    if(req.query.id == null){
+        res.sendFile(path.join(__dirname + '/lego.json'));
+    }
+    else{
+        const r = lego.legos.find(p => p.Numero === req.query.id);
+        console.log(r);
+        res.render('l', {title : `About ${r.Nome}` ,r}); // l è il nome del file
+    }
+    
 });
 
 app.listen(3000, function () {
