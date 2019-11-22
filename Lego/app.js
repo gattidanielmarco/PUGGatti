@@ -1,6 +1,9 @@
 var express = require('express');
 var app = express();
 const lego = require('./lego.json');
+const http = require('http');
+var cors = require('cors');
+app.use(cors());
 app.set('view engine', 'pug');   //Dico a express di usare pug come motore di template
 app.use(express.static(__dirname + '/public')); // Dico ad express dove recuperare i file statici
 app.get('/', function (req, res) {
