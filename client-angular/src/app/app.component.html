@@ -1,15 +1,11 @@
-<div>
-  <button (click) = "visuaDati4767()">Cliccami per visualizzare il Lego di Harry Potter</button><br>
-  <button (click) = "visuaDati10188()">Cliccami per visualizzare il Lego della Morte Nera</button><br>
-  <button (click) = "visuaDati4768()">Cliccami per visualizzare il Lego di Harry Potter</button>
-<div *ngFor = "let d of results">
-  <h2>{{d.nome}}</h2>
-  <p>{{d.eta}}</p>
-  <p>{{d.nPezzi}}</p>
-  <p>{{d.numero}}</p>
-  <p>{{d.link}}</p>
-  <p>{{d.ImgSrc}}</p>
+<div class = "row col-sm-12">
+  <div class="card" class ="col-sm-3" *ngFor="let l of results">
+    <img src= "/assets/{{l.numero}}/{{l.ImgSrc}}" class="card-img-top">
+      <div class = "card-body">
+        <h3 class="card-title">{{l.nome}}</h3>
+        <button (click) = "visuaDati(l.numero)">Visualizza dettagli</button>
+      </div>
+  </div>
 </div>
-
-
+<app-lego-istruzioni [lego]="selectedLego" *ngIf = "selectedLego"></app-lego-istruzioni>
 

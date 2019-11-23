@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LegoIstruzioniComponent } from './lego-istruzioni/lego-istruzioni.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LegoIstruzioniComponent
   ],
   imports: [
     BrowserModule,HttpClientModule
